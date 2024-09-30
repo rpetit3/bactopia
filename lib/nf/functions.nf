@@ -93,7 +93,6 @@ def _get_include_schemas(includes) {
 
 def _get_module_schemas(modules) {
     def module_schemas = []
-    println("MODULES: ${modules}")
     modules.each { it ->
         if (params.wf == "cleanyerreads") {
             module_schemas << "${params.workflows[it].path}/params-${params.wf}.json"
